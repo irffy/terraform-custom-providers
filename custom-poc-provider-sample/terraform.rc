@@ -1,0 +1,9 @@
+provider_installation {
+  filesystem_mirror {
+    path    = "C:/Projects/terraform-custom-providers/custom-poc-provider-sample"
+    include = ["terraform-provider-example"]
+  }
+  direct {
+    exclude = ["terraform-provider-example"]
+  }
+}
